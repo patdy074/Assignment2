@@ -1,0 +1,12 @@
+package nuber.students;
+
+public class Passenger extends Person {
+
+	public Passenger(String name, int maxSleep) {
+		super(name, maxSleep);
+	}
+
+	public int getTravelTime() {
+	    return Math.max(1, (int)(Math.random() * maxSleep));
+	}
+}
